@@ -165,7 +165,7 @@ This ensures the final answer is grounded in the *best* available evidence.
 
 ## ⚠️ Disclaimer
 
-MedRAG is for **educational purposes only** and is not a substitute for professional medical advice, diagnosis, or treatment.
+Synapse is for **educational purposes only** and is not a substitute for professional medical advice, diagnosis, or treatment.
 
 ---
 
