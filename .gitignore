@@ -1,0 +1,15 @@
+venv/
+__pycache__/
+*.pkl
+*.faiss
+*.npy
+*.pyc
+.env
+.DS_Store
+bm25_test/
+bm25_index/
+vector_store/
+vector_store_test/
+hybrid_index/
+eval_log*.json
+processed_chunks.pkl
