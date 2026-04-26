@@ -1,0 +1,29 @@
+# Synapse — A Zenith Company
+# Requirements
+# Install with: pip install -r requirements.txt
+
+# Core AI / LLM
+openai==2.32.0
+
+# Embeddings + Vector Search
+faiss-cpu==1.13.2
+numpy==2.4.3
+tiktoken==0.12.0
+
+# Keyword Search
+rank-bm25==0.2.2
+
+# LangChain (chunking only)
+langchain==1.2.15
+langchain-core==1.3.0
+langchain-text-splitters==1.1.2
+
+# PDF loading
+pypdf==5.9.0
+
+# UI
+streamlit==1.56.0
+plotly==6.7.0
+
+# Environment
+python-dotenv==1.2.2
