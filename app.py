@@ -433,8 +433,10 @@ st.markdown("""
 # ---------------------------------------------------------------------------
 
 def init():
-    for k, v in {"conversation": [], "chunks_built": False, "chunks": [], "hybrid": None, "api_key": "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"
-}.items():
+    for k, v in {
+        "conversation": [], "chunks_built": False, "chunks": [],
+        "hybrid": None, "api_key": os.getenv("OPENAI_API_KEY", ""),
+    }.items():
         if k not in st.session_state:
             st.session_state[k] = v
 
