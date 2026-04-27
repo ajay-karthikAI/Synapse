@@ -23,7 +23,7 @@ from dotenv import load_dotenv
 load_dotenv()
 sys.path.insert(0, str(Path(__file__).parent))
 
-from data.fetch_and_chunk import chunks_from_pubmed, save_chunks
+from Data.fetch_and_chunk import chunks_from_pubmed, save_chunks
 
 TOPICS = [
 
