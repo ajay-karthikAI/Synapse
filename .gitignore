@@ -10,6 +10,6 @@ bm25_test/
 bm25_index/
 vector_store/
 vector_store_test/
-hybrid_index/
+##hybrid_index/
 eval_log*.json
-processed_chunks.pkl
+##processed_chunks.pkl
