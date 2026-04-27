@@ -618,7 +618,7 @@ if submitted and query.strip():
                 result = {"answer": EMERGENCY_RESPONSE, "is_emergency": True, "sources": [], "query": query, "model": "emergency_bypass"}
             else:
                 if not st.session_state.chunks_built or not st.session_state.chunks:
-                    from Data.fetch_and_chunk import build_corpus
+                    from Data.fetch_and_chunk import load_chunks
                     chunks = load_chunks("processed_chunks.pkl")
                     st.session_state.chunks = chunks
                     st.session_state.chunks_built = True
