@@ -619,12 +619,11 @@ if submitted and query.strip():
             else:
                 if not st.session_state.chunks_built or not st.session_state.chunks:
                     from Data.fetch_and_chunk import build_corpus
-                    chunks = build_corpus(query="diabetes symptoms treatment hypertension cardiovascular", max_articles=15, use_cache=True)
+                    chunks = load_chunks("processed_chunks.pkl")
                     st.session_state.chunks = chunks
                     st.session_state.chunks_built = True
                     from Retrieval.hybrid_retriever import HybridRetriever
-                    hybrid = HybridRetriever(fusion="linear", alpha=0.7)
-                    hybrid.build(chunks, api_key=api_key)
+                    hybrid = HybridRetriever.load("hybrid_index", fusion="linear", alpha=0.7)
                     st.session_state.hybrid = hybrid
 
                 hybrid = st.session_state.hybrid
